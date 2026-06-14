@@ -3,17 +3,19 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-    <AssemblyName>TerrariaX64</AssemblyName>
-    <RootNamespace>TerrariaX64</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU</Platforms>
+    <AutomaticallyUseImplicitNETCoreSdkManifests>false</AutomaticallyUseImplicitNETCoreSdkManifests>
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="resources/win64/SDL2.dll" />
-    <EmbeddedResource Include="resources/win64/FAudio.dll" />
-    <EmbeddedResource Include="resources/linux64/libSDL2-2.0.so.0" />
-    <EmbeddedResource Include="resources/linux64/libFAudio.so.0" />
+    <EmbeddedResource Include="resources\win64\SDL2.dll">
+      <LogicalName>resources.win64.SDL2.dll</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\win64\FAudio.dll">
+      <LogicalName>resources.win64.FAudio.dll</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
